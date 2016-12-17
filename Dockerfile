@@ -63,13 +63,13 @@ RUN	echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
 	rm -rf /var/cache/apk/*
 
 # Set Workdir
-WORKDIR /www
+#WORKDIR /www
 
 # Expose volumes
-VOLUME ["/www"]
+#VOLUME ["/www"]
 
 # Expose ports
 EXPOSE 9000
 
 # Entry point
-ENTRYPOINT ["/usr/sbin/php-fpm7"]
+#ENTRYPOINT ["/usr/sbin/php-fpm7"]
